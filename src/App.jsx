@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CreatePost from './Components/CreatePost';
+import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <div>
      <h3>Hello there.</h3>
      <CreatePost addNewPostProperty = {addNewPost}/>
+     <DisplayPosts parentEntries = {entries} />
     </div>
   );
 }
