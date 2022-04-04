@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import CreatePost from './Components/CreatePost';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
-
+import './app.css';
 
 function App() {
 
@@ -20,8 +20,12 @@ function App() {
 
         </div>
         <div className='col-md-6'>
+          <div className='border-box'>
           <CreatePost addNewPostProperty = {addNewPost}/>
+          </div>
+          <div className='border-box'>
           <DisplayPosts parentEntries = {entries} />
+          </div>
         </div>
         <div className='col-md-3'>
 
