@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import CreatePost from './Components/CreatePost';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
 import './app.css';
+import NavBarTitle from './Components/NavBar/NavBar';
 
 function App() {
 
@@ -16,8 +17,7 @@ function App() {
   return (
     <div className='container-fluid'>
       <div className='row'>
-        <h3 style={{margin: '1em'}}>Social
-        <small className='text-muted'>Feed</small></h3>
+        <NavBarTitle/>
         <div className='col-md-3'>
 
         </div>
@@ -25,7 +25,7 @@ function App() {
           <div className='border-box'>
           <CreatePost addNewPostProperty = {addNewPost}/>
           </div>
-          <div className='border-box'>
+          <div>
           <DisplayPosts parentEntries = {entries} />
           </div>
         </div>
