@@ -12,7 +12,9 @@ const CreatePost = (props) => {
             name: name,
             post: post
         };
-        props.addNewPostProperty(newPost)
+        setName('');
+        setPost('');
+        props.addNewPostProperty(newPost);
     }
     return (
         <form onSubmit={handleSubmit}>
