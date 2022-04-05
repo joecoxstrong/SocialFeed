@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import CreatePost from './Components/CreatePost';
+import CreatePost from './Components/CreatePost/CreatePost';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
 import './app.css';
 import NavBarTitle from './Components/NavBar/NavBar';
