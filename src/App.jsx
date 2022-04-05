@@ -16,6 +16,8 @@ function App() {
   return (
     <div className='container-fluid'>
       <div className='row'>
+        <h3 style={{margin: '1em'}}>Social
+        <small className='text-muted'>Feed</small></h3>
         <div className='col-md-3'>
 
         </div>
