@@ -4,15 +4,26 @@
     border-color: black;
     margin: 1rem;
     padding: 1em;
-}
+    
 
+}
+.remove-margin{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
 /* like dislike */
 
 button{
+    border-image: round;
     color: white;
+    background-color: rgb(14, 107, 230);
     padding: 1rem;
     display: inline-block;
     border-radius: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .active{
     background-color: rgb(7, 218, 7);

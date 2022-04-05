@@ -16,14 +16,12 @@ const LikeDislike = (props) => {
   }
   return (
     <div>
-      {/* <button className={buttonClass} onClick={handleClick}>
-        <img src="/src/img/thumb-up-svgrep-com.svg" alt=""></img>{" "}
-      </button> */}
+      <button className={buttonClass} onClick={handleClick}></button>
       <br></br>
       <Button
-        // className={buttonClass}
+        className={buttonClass}
         variant="contained"
-        color="secondary"
+        // color="secondary"
         endIcon={<ThumbUp />}
         onClick={handleClick}
       ></Button>
