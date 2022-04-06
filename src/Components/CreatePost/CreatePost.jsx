@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const CreatePost = (props) => {
   const [name, setName] = useState("");
@@ -15,7 +17,7 @@ const CreatePost = (props) => {
     props.addNewPostProperty(newPost);
   }
   return (
-    <form onSubmit={handleSubmit} style={{ backgroundColor: "white" }}>
+    <form onSubmit={handleSubmit}>
       <div class="row mb-3">
         <label for="colFormLabel" class="col-sm-2 col-form-label">
           Name
@@ -44,9 +46,15 @@ const CreatePost = (props) => {
             onChange={(event) => setPost(event.target.value)}
           />
         </div>
+        <label for="colFormLabel" class="col-sm-2 col-form-label">
+          Date
+        </label>
+        <DatePicker />
       </div>
 
-      <button type="submit">Create</button>
+      <button type="submit" style={{ marginLeft: 450 }}>
+        Create
+      </button>
     </form>
   );
 };
