@@ -4,25 +4,27 @@ import SendIcon from "@mui/icons-material/Send";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import { ThumbUp } from "@mui/icons-material";
 import ThumbDownIcon from "@mui/icons-material/ThumbDown";
+import { grey } from "@mui/material/colors";
 
 function LikeDislike() {
-  const [likeStatus, setLikeStatus] = useState("👍");
+  const [likeStatus, setLikeStatus] = useState("😎");
   function handleClick() {
-    if (likeStatus === "👎") {
-      setLikeStatus("👍");
+    if (likeStatus === "😡") {
+      setLikeStatus("😎");
     } else {
-      setLikeStatus("👎");
+      setLikeStatus("😡");
     }
   }
 
   return (
-    <likebutton
-      className={likeStatus}
+    <button
+      // className={likeStatus}
       onClick={handleClick}
       style={{ marginLeft: 500 }}
+      class="likebutton"
     >
       {likeStatus}
-    </likebutton>
+    </button>
   );
 }
 

@@ -21,9 +21,7 @@
 .button{
     color: white;
     background-color: rgb(14, 107, 230);
-    
-    display: inline-block;
-    
+    display: inline-block; 
     padding-top: 1px;
     padding-bottom: 1px;
     
@@ -35,15 +33,15 @@
 }
 
 .inactive{
-    background-color: grey;
+    background-color: rgb(122, 197, 100);
 }
 
-/* .likebutton{
+.likebutton{
     
-    background-color: rgb(129, 161, 202);
-    padding: 7rem;
+    background-color: rgba(154, 158, 155, 0.493);
+    padding: 1rem;
     display: inline-block;
-    border-radius: 50%;
+    border-radius: 40%;
     padding-top: 5px;
     padding-bottom: 5px;
-} */
+}
