@@ -9,7 +9,9 @@ const DisplayPosts = (props) => {
             <h4 class="media-heading">{entry.name}</h4>
             <div>{entry.post}</div>
             <div>{entry.date}</div>
-            <LikeDislike />
+            <div>
+              <LikeDislike />
+            </div>
           </div>
         );
       })}
