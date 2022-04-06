@@ -62,7 +62,11 @@ const CreatePost = (props) => {
         </div>
       </div>
 
-      <button type="submit" style={{ marginLeft: 450 }}>
+      <button
+        type="submit"
+        class="button rounded-button"
+        style={{ marginLeft: 450 }}
+      >
         Create
       </button>
     </form>
