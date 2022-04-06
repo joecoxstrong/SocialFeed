@@ -6,7 +6,11 @@ import NavBarTitle from "./Components/NavBar/NavBar";
 
 function App() {
   const [entries, setEntries] = useState([
-    { name: "Princess Leia", post: "I am NOT a committee!!" },
+    {
+      name: "Princess Leia",
+      post: "I am NOT a committee!!",
+      date: "A long time ago...",
+    },
   ]);
 
   function addNewPost(entry) {

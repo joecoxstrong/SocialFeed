@@ -5,15 +5,18 @@ import "react-datepicker/dist/react-datepicker.css";
 const CreatePost = (props) => {
   const [name, setName] = useState("");
   const [post, setPost] = useState("");
+  const [date, setDate] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
     let newPost = {
       name: name,
       post: post,
+      date: date,
     };
     setName("");
     setPost("");
+    setDate("");
     props.addNewPostProperty(newPost);
   }
   return (
@@ -49,7 +52,14 @@ const CreatePost = (props) => {
         <label for="colFormLabel" class="col-sm-2 col-form-label">
           Date
         </label>
-        <DatePicker />
+        <div class="col-sm-10">
+          <input
+            type="date"
+            class="form-control"
+            value={date}
+            onChange={(event) => setDate(event.target.value)}
+          />
+        </div>
       </div>
 
       <button type="submit" style={{ marginLeft: 450 }}>
